@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Diri</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .container {
+            width: 70%;
+            margin: 0 auto;
+        }
+        .profile-section {
+            display: flex;
+            justify-content: space-between;
+            margin-right: 500px;
+            align-items: center ;
+        }
+        .profile-section img {
+            max-width: 150px;
+            border-radius: 50%;
+        }
+        .profile-section video {
+            width: 300px;
+            height: 200px;
+        }
+        table {
+            width: 20%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        .form-section {
+            margin-top: 20px;
+        }
+        .form-section input, .form-section textarea {
+            width: 20%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        .form-section button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .form-section button:hover {
+            background-color: #45a049;
+        }
+        .social-links a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Profil Pribadi</h1>
+    
+    <div class="container">
+        <!-- Foto Profil dan Video Perkenalan -->
+        <div class="profile-section">
+            <div>
+                <img src="potoprofil.jpg.jpg" alt="Foto Profil">
+            </div>
+            <div>
+                <video controls>
+                    <source src="videoperkenalan.mp4" type="video/mp4">
+                    Browser Anda tidak mendukung tag video.
+                </video>
+            </div>
+        </div>
+        
+        <!-- Tentang Saya -->
+        <section>
+            <h2>Tentang Saya</h2>
+            <p>Saya adalah seorang programmer berpengalaman dengan keahlian di berbagai bahasa pemrograman dan teknologi. Dengan latar belakang yang kuat dalam pengembangan perangkat lunak, saya memiliki kemampuan untuk membangun aplikasi yang efisien, skalabel, dan user-friendly. </p>
+        </section>
+
+        <!-- Keterampilan -->
+        <section>
+            <h2>Keterampilan</h2>
+            <table>
+                <tr>
+                    <th>Keterampilan</th>
+                    <th>Tingkat</th>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>Mahir</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Menengah</td>
+                </tr>
+                <tr>
+                    <td>HTML/CSS</td>
+                    <td>Pemula</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Formulir Kontak -->
+        <section class="form-section">
+            <h2>Hubungi Saya</h2>
+            <form action="#">
+                <div class="form-group">
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+            <label for="message">Pesan:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+                
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </section>
+
+
+        <!-- Media Sosial -->
+        <section>
+            <h2>Media Sosial</h2>
+            <div class="social-links">
+                <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://www.github.com" target="_blank">GitHub</a>
+                <a href="https://www.twitter.com" target="_blank">Twitter</a>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
